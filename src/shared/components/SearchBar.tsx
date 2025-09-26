@@ -3,7 +3,10 @@ interface SearchBarProps {
   buttonTitle: string;
 }
 
-export const SearchBar = ({ placeholder, buttonTitle }: SearchBarProps) => {
+export const SearchBar = ({
+  placeholder = "Buscar",
+  buttonTitle,
+}: SearchBarProps) => {
   return (
     <div className="search-container">
       <input type="text" placeholder={placeholder} />

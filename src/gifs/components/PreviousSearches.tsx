@@ -1,11 +1,18 @@
-export const PreviousSearches = () => {
+interface PreviousSearchesProps {
+  title: string;
+  searches: string[];
+}
+export const PreviousSearches = ({
+  title,
+  searches,
+}: PreviousSearchesProps) => {
   return (
     <div className="previous-searches">
-      <h2>Búsquedas Previas</h2>
+      <h2>{title}</h2>
       <ul className="previous-searches-list">
-        <li>Goku</li>
-        <li>Goku</li>
-        <li>Goku</li>
+        {searches.map((term) => (
+          <li key={term}>{term}</li>
+        ))}
       </ul>
     </div>
   );
