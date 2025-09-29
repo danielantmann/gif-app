@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 interface SearchBarProps {
   placeholder?: string;
-  buttonTitle: string;
+  buttonTitle?: string;
   onQuery: (query: string) => void;
 }
 
