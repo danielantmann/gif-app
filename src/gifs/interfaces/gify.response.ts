@@ -100,24 +100,13 @@ export interface Looping {
   mp4: string;
 }
 
-export enum Rating {
-  G = "g",
-  PG = "pg",
-  PG13 = "pg-13",
-}
+export type Rating = "G" | "PG" | "PG13";
 
-export enum SourceCaption {
-  Empty = "",
-  EternoCapitanHomages2013 = "Eterno Capitan Homages 2013",
-}
+export type SourceCaption = "" | "Eterno Capitan Homages 2013";
 
-export enum TrendingDatetimeEnum {
-  The00000000000000 = "0000-00-00 00:00:00",
-}
+export type TrendingDatetimeEnum = "0000-00-00 00:00:00";
 
-export enum Type {
-  GIF = "gif",
-}
+export type Type = "gif";
 
 export interface User {
   avatar_url: string;
